@@ -47,3 +47,27 @@ local function run(msg, matches)
   if matches[1] == "کون" then
     url = getRandomButts()
   end
+
+  if url ~= nil then
+    local receiver = get_receiver(msg)
+    send_photo_from_url(receiver, url)
+  else
+    return 'Error getting boobs/butts for you, please try again later.' 
+  end
+end
+
+return {
+  description = "Gets a random boobs or butts pic", 
+  usage = {
+    "!boobs: Get a boobs NSFW image. 🔞",
+    "!butts: Get a butts NSFW image. 🔞"
+  },
+  patterns = {
+    "^ممه$",
+    "^کون$"
+  }, 
+  run = run 
+}
+
+end
+
