@@ -203,11 +203,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "banhammer",
-    "ingroup",
-    "inpm",
-    "linkpv,
-    "chat"
+    "boob"
     },
     sudo_users = {213258678},--Sudo users
     disabled_channels = {},
